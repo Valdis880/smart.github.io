@@ -22,3 +22,54 @@ margin-top: 3%;
 .main-logo-border p span {
 	color: #fc6744;
 }
+
+.main-nav-bar {
+	position: relative;
+	float: right;
+	margin-top: 25px;
+	width: 30px;
+}
+
+.line {
+	border-radius: 5px;
+	display: block;
+	width: 30px;
+	height: 4px;
+	background-color: #626262;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	-webkit-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+
+.line::before {
+	border-radius: 5px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	content: '';
+	width: 30px;
+	height: 4px;
+	background-color: #626262;
+	-webkit-transform: translateY(-8px);
+	-ms-transform: translateY(-8px);
+	-o-transform: translateY(-8px);
+	transform: translateY(-8px);
+}
+.line::after {
+	border-radius: 5px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	content: '';
+	width: 30px;
+	height: 4px;
+	background-color: #626262;
+	-webkit-transform: translateY(4px);
+	-ms-transform: translateY(4px);
+	-o-transform: translateY(4px);
+	transform: translateY(4px);
+}
